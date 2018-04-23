@@ -798,22 +798,28 @@ void FullSystem::flagPointsForRemoval()
 
 }
 
-
+// Basically the entrance step
 void FullSystem::addActiveFrame( ImageAndExposure* image, int id )
 {
 
     if(isLost) return;
+    //Multithread operation
 	boost::unique_lock<boost::mutex> lock(trackMutex);
 
 
 	// =========================== add into allFrameHistory =========================
+    // FrameHessian contains all the information of the frame, even though it's not key frame. FrameShell will be part of it.
 	FrameHessian* fh = new FrameHessian();
 	FrameShell* shell = new FrameShell();
+	// initialize shell. Basically used for front-end part.
+    // motion from this frame to world coordinates
 	shell->camToWorld = SE3(); 		// no lock required, as fh is not used anywhere yet.
+    // affine brightness transfer function.
 	shell->aff_g2l = AffLight(0,0);
     shell->marginalizedAt = shell->id = allFrameHistory.size();
     shell->timestamp = image->timestamp;
     shell->incoming_id = id;
+    // add shell to FrameHessian
 	fh->shell = shell;
 	allFrameHistory.push_back(shell);
 

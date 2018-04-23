@@ -43,10 +43,10 @@ RM = /root/Downloads/clion-2018.1.1/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/code/mil_dso
+CMAKE_SOURCE_DIR = /data/code2/mil_dso
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/code/mil_dso/cmake-build-debug
+CMAKE_BINARY_DIR = /data/code2/mil_dso/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/dso.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/dso.dir/flags.make
 
 CMakeFiles/dso.dir/src/FullSystem/FullSystem.cpp.o: CMakeFiles/dso.dir/flags.make
 CMakeFiles/dso.dir/src/FullSystem/FullSystem.cpp.o: ../src/FullSystem/FullSystem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dso.dir/src/FullSystem/FullSystem.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/FullSystem/FullSystem.cpp.o -c /data/code/mil_dso/src/FullSystem/FullSystem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dso.dir/src/FullSystem/FullSystem.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/FullSystem/FullSystem.cpp.o -c /data/code2/mil_dso/src/FullSystem/FullSystem.cpp
 
 CMakeFiles/dso.dir/src/FullSystem/FullSystem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dso.dir/src/FullSystem/FullSystem.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code/mil_dso/src/FullSystem/FullSystem.cpp > CMakeFiles/dso.dir/src/FullSystem/FullSystem.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code2/mil_dso/src/FullSystem/FullSystem.cpp > CMakeFiles/dso.dir/src/FullSystem/FullSystem.cpp.i
 
 CMakeFiles/dso.dir/src/FullSystem/FullSystem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dso.dir/src/FullSystem/FullSystem.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code/mil_dso/src/FullSystem/FullSystem.cpp -o CMakeFiles/dso.dir/src/FullSystem/FullSystem.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code2/mil_dso/src/FullSystem/FullSystem.cpp -o CMakeFiles/dso.dir/src/FullSystem/FullSystem.cpp.s
 
 CMakeFiles/dso.dir/src/FullSystem/FullSystem.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/dso.dir/src/FullSystem/FullSystem.cpp.o.provides.build: CMakeFiles/ds
 
 CMakeFiles/dso.dir/src/FullSystem/FullSystemOptimize.cpp.o: CMakeFiles/dso.dir/flags.make
 CMakeFiles/dso.dir/src/FullSystem/FullSystemOptimize.cpp.o: ../src/FullSystem/FullSystemOptimize.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dso.dir/src/FullSystem/FullSystemOptimize.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/FullSystem/FullSystemOptimize.cpp.o -c /data/code/mil_dso/src/FullSystem/FullSystemOptimize.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dso.dir/src/FullSystem/FullSystemOptimize.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/FullSystem/FullSystemOptimize.cpp.o -c /data/code2/mil_dso/src/FullSystem/FullSystemOptimize.cpp
 
 CMakeFiles/dso.dir/src/FullSystem/FullSystemOptimize.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dso.dir/src/FullSystem/FullSystemOptimize.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code/mil_dso/src/FullSystem/FullSystemOptimize.cpp > CMakeFiles/dso.dir/src/FullSystem/FullSystemOptimize.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code2/mil_dso/src/FullSystem/FullSystemOptimize.cpp > CMakeFiles/dso.dir/src/FullSystem/FullSystemOptimize.cpp.i
 
 CMakeFiles/dso.dir/src/FullSystem/FullSystemOptimize.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dso.dir/src/FullSystem/FullSystemOptimize.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code/mil_dso/src/FullSystem/FullSystemOptimize.cpp -o CMakeFiles/dso.dir/src/FullSystem/FullSystemOptimize.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code2/mil_dso/src/FullSystem/FullSystemOptimize.cpp -o CMakeFiles/dso.dir/src/FullSystem/FullSystemOptimize.cpp.s
 
 CMakeFiles/dso.dir/src/FullSystem/FullSystemOptimize.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/dso.dir/src/FullSystem/FullSystemOptimize.cpp.o.provides.build: CMake
 
 CMakeFiles/dso.dir/src/FullSystem/FullSystemOptPoint.cpp.o: CMakeFiles/dso.dir/flags.make
 CMakeFiles/dso.dir/src/FullSystem/FullSystemOptPoint.cpp.o: ../src/FullSystem/FullSystemOptPoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/dso.dir/src/FullSystem/FullSystemOptPoint.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/FullSystem/FullSystemOptPoint.cpp.o -c /data/code/mil_dso/src/FullSystem/FullSystemOptPoint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/dso.dir/src/FullSystem/FullSystemOptPoint.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/FullSystem/FullSystemOptPoint.cpp.o -c /data/code2/mil_dso/src/FullSystem/FullSystemOptPoint.cpp
 
 CMakeFiles/dso.dir/src/FullSystem/FullSystemOptPoint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dso.dir/src/FullSystem/FullSystemOptPoint.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code/mil_dso/src/FullSystem/FullSystemOptPoint.cpp > CMakeFiles/dso.dir/src/FullSystem/FullSystemOptPoint.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code2/mil_dso/src/FullSystem/FullSystemOptPoint.cpp > CMakeFiles/dso.dir/src/FullSystem/FullSystemOptPoint.cpp.i
 
 CMakeFiles/dso.dir/src/FullSystem/FullSystemOptPoint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dso.dir/src/FullSystem/FullSystemOptPoint.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code/mil_dso/src/FullSystem/FullSystemOptPoint.cpp -o CMakeFiles/dso.dir/src/FullSystem/FullSystemOptPoint.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code2/mil_dso/src/FullSystem/FullSystemOptPoint.cpp -o CMakeFiles/dso.dir/src/FullSystem/FullSystemOptPoint.cpp.s
 
 CMakeFiles/dso.dir/src/FullSystem/FullSystemOptPoint.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/dso.dir/src/FullSystem/FullSystemOptPoint.cpp.o.provides.build: CMake
 
 CMakeFiles/dso.dir/src/FullSystem/FullSystemDebugStuff.cpp.o: CMakeFiles/dso.dir/flags.make
 CMakeFiles/dso.dir/src/FullSystem/FullSystemDebugStuff.cpp.o: ../src/FullSystem/FullSystemDebugStuff.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/dso.dir/src/FullSystem/FullSystemDebugStuff.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/FullSystem/FullSystemDebugStuff.cpp.o -c /data/code/mil_dso/src/FullSystem/FullSystemDebugStuff.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/dso.dir/src/FullSystem/FullSystemDebugStuff.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/FullSystem/FullSystemDebugStuff.cpp.o -c /data/code2/mil_dso/src/FullSystem/FullSystemDebugStuff.cpp
 
 CMakeFiles/dso.dir/src/FullSystem/FullSystemDebugStuff.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dso.dir/src/FullSystem/FullSystemDebugStuff.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code/mil_dso/src/FullSystem/FullSystemDebugStuff.cpp > CMakeFiles/dso.dir/src/FullSystem/FullSystemDebugStuff.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code2/mil_dso/src/FullSystem/FullSystemDebugStuff.cpp > CMakeFiles/dso.dir/src/FullSystem/FullSystemDebugStuff.cpp.i
 
 CMakeFiles/dso.dir/src/FullSystem/FullSystemDebugStuff.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dso.dir/src/FullSystem/FullSystemDebugStuff.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code/mil_dso/src/FullSystem/FullSystemDebugStuff.cpp -o CMakeFiles/dso.dir/src/FullSystem/FullSystemDebugStuff.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code2/mil_dso/src/FullSystem/FullSystemDebugStuff.cpp -o CMakeFiles/dso.dir/src/FullSystem/FullSystemDebugStuff.cpp.s
 
 CMakeFiles/dso.dir/src/FullSystem/FullSystemDebugStuff.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/dso.dir/src/FullSystem/FullSystemDebugStuff.cpp.o.provides.build: CMa
 
 CMakeFiles/dso.dir/src/FullSystem/FullSystemMarginalize.cpp.o: CMakeFiles/dso.dir/flags.make
 CMakeFiles/dso.dir/src/FullSystem/FullSystemMarginalize.cpp.o: ../src/FullSystem/FullSystemMarginalize.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/dso.dir/src/FullSystem/FullSystemMarginalize.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/FullSystem/FullSystemMarginalize.cpp.o -c /data/code/mil_dso/src/FullSystem/FullSystemMarginalize.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/dso.dir/src/FullSystem/FullSystemMarginalize.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/FullSystem/FullSystemMarginalize.cpp.o -c /data/code2/mil_dso/src/FullSystem/FullSystemMarginalize.cpp
 
 CMakeFiles/dso.dir/src/FullSystem/FullSystemMarginalize.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dso.dir/src/FullSystem/FullSystemMarginalize.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code/mil_dso/src/FullSystem/FullSystemMarginalize.cpp > CMakeFiles/dso.dir/src/FullSystem/FullSystemMarginalize.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code2/mil_dso/src/FullSystem/FullSystemMarginalize.cpp > CMakeFiles/dso.dir/src/FullSystem/FullSystemMarginalize.cpp.i
 
 CMakeFiles/dso.dir/src/FullSystem/FullSystemMarginalize.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dso.dir/src/FullSystem/FullSystemMarginalize.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code/mil_dso/src/FullSystem/FullSystemMarginalize.cpp -o CMakeFiles/dso.dir/src/FullSystem/FullSystemMarginalize.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code2/mil_dso/src/FullSystem/FullSystemMarginalize.cpp -o CMakeFiles/dso.dir/src/FullSystem/FullSystemMarginalize.cpp.s
 
 CMakeFiles/dso.dir/src/FullSystem/FullSystemMarginalize.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/dso.dir/src/FullSystem/FullSystemMarginalize.cpp.o.provides.build: CM
 
 CMakeFiles/dso.dir/src/FullSystem/Residuals.cpp.o: CMakeFiles/dso.dir/flags.make
 CMakeFiles/dso.dir/src/FullSystem/Residuals.cpp.o: ../src/FullSystem/Residuals.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/dso.dir/src/FullSystem/Residuals.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/FullSystem/Residuals.cpp.o -c /data/code/mil_dso/src/FullSystem/Residuals.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/dso.dir/src/FullSystem/Residuals.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/FullSystem/Residuals.cpp.o -c /data/code2/mil_dso/src/FullSystem/Residuals.cpp
 
 CMakeFiles/dso.dir/src/FullSystem/Residuals.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dso.dir/src/FullSystem/Residuals.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code/mil_dso/src/FullSystem/Residuals.cpp > CMakeFiles/dso.dir/src/FullSystem/Residuals.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code2/mil_dso/src/FullSystem/Residuals.cpp > CMakeFiles/dso.dir/src/FullSystem/Residuals.cpp.i
 
 CMakeFiles/dso.dir/src/FullSystem/Residuals.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dso.dir/src/FullSystem/Residuals.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code/mil_dso/src/FullSystem/Residuals.cpp -o CMakeFiles/dso.dir/src/FullSystem/Residuals.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code2/mil_dso/src/FullSystem/Residuals.cpp -o CMakeFiles/dso.dir/src/FullSystem/Residuals.cpp.s
 
 CMakeFiles/dso.dir/src/FullSystem/Residuals.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/dso.dir/src/FullSystem/Residuals.cpp.o.provides.build: CMakeFiles/dso
 
 CMakeFiles/dso.dir/src/FullSystem/CoarseTracker.cpp.o: CMakeFiles/dso.dir/flags.make
 CMakeFiles/dso.dir/src/FullSystem/CoarseTracker.cpp.o: ../src/FullSystem/CoarseTracker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/dso.dir/src/FullSystem/CoarseTracker.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/FullSystem/CoarseTracker.cpp.o -c /data/code/mil_dso/src/FullSystem/CoarseTracker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/dso.dir/src/FullSystem/CoarseTracker.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/FullSystem/CoarseTracker.cpp.o -c /data/code2/mil_dso/src/FullSystem/CoarseTracker.cpp
 
 CMakeFiles/dso.dir/src/FullSystem/CoarseTracker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dso.dir/src/FullSystem/CoarseTracker.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code/mil_dso/src/FullSystem/CoarseTracker.cpp > CMakeFiles/dso.dir/src/FullSystem/CoarseTracker.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code2/mil_dso/src/FullSystem/CoarseTracker.cpp > CMakeFiles/dso.dir/src/FullSystem/CoarseTracker.cpp.i
 
 CMakeFiles/dso.dir/src/FullSystem/CoarseTracker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dso.dir/src/FullSystem/CoarseTracker.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code/mil_dso/src/FullSystem/CoarseTracker.cpp -o CMakeFiles/dso.dir/src/FullSystem/CoarseTracker.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code2/mil_dso/src/FullSystem/CoarseTracker.cpp -o CMakeFiles/dso.dir/src/FullSystem/CoarseTracker.cpp.s
 
 CMakeFiles/dso.dir/src/FullSystem/CoarseTracker.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/dso.dir/src/FullSystem/CoarseTracker.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/dso.dir/src/FullSystem/CoarseInitializer.cpp.o: CMakeFiles/dso.dir/flags.make
 CMakeFiles/dso.dir/src/FullSystem/CoarseInitializer.cpp.o: ../src/FullSystem/CoarseInitializer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/dso.dir/src/FullSystem/CoarseInitializer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/FullSystem/CoarseInitializer.cpp.o -c /data/code/mil_dso/src/FullSystem/CoarseInitializer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/dso.dir/src/FullSystem/CoarseInitializer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/FullSystem/CoarseInitializer.cpp.o -c /data/code2/mil_dso/src/FullSystem/CoarseInitializer.cpp
 
 CMakeFiles/dso.dir/src/FullSystem/CoarseInitializer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dso.dir/src/FullSystem/CoarseInitializer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code/mil_dso/src/FullSystem/CoarseInitializer.cpp > CMakeFiles/dso.dir/src/FullSystem/CoarseInitializer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code2/mil_dso/src/FullSystem/CoarseInitializer.cpp > CMakeFiles/dso.dir/src/FullSystem/CoarseInitializer.cpp.i
 
 CMakeFiles/dso.dir/src/FullSystem/CoarseInitializer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dso.dir/src/FullSystem/CoarseInitializer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code/mil_dso/src/FullSystem/CoarseInitializer.cpp -o CMakeFiles/dso.dir/src/FullSystem/CoarseInitializer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code2/mil_dso/src/FullSystem/CoarseInitializer.cpp -o CMakeFiles/dso.dir/src/FullSystem/CoarseInitializer.cpp.s
 
 CMakeFiles/dso.dir/src/FullSystem/CoarseInitializer.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/dso.dir/src/FullSystem/CoarseInitializer.cpp.o.provides.build: CMakeF
 
 CMakeFiles/dso.dir/src/FullSystem/ImmaturePoint.cpp.o: CMakeFiles/dso.dir/flags.make
 CMakeFiles/dso.dir/src/FullSystem/ImmaturePoint.cpp.o: ../src/FullSystem/ImmaturePoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/dso.dir/src/FullSystem/ImmaturePoint.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/FullSystem/ImmaturePoint.cpp.o -c /data/code/mil_dso/src/FullSystem/ImmaturePoint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/dso.dir/src/FullSystem/ImmaturePoint.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/FullSystem/ImmaturePoint.cpp.o -c /data/code2/mil_dso/src/FullSystem/ImmaturePoint.cpp
 
 CMakeFiles/dso.dir/src/FullSystem/ImmaturePoint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dso.dir/src/FullSystem/ImmaturePoint.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code/mil_dso/src/FullSystem/ImmaturePoint.cpp > CMakeFiles/dso.dir/src/FullSystem/ImmaturePoint.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code2/mil_dso/src/FullSystem/ImmaturePoint.cpp > CMakeFiles/dso.dir/src/FullSystem/ImmaturePoint.cpp.i
 
 CMakeFiles/dso.dir/src/FullSystem/ImmaturePoint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dso.dir/src/FullSystem/ImmaturePoint.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code/mil_dso/src/FullSystem/ImmaturePoint.cpp -o CMakeFiles/dso.dir/src/FullSystem/ImmaturePoint.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code2/mil_dso/src/FullSystem/ImmaturePoint.cpp -o CMakeFiles/dso.dir/src/FullSystem/ImmaturePoint.cpp.s
 
 CMakeFiles/dso.dir/src/FullSystem/ImmaturePoint.cpp.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/dso.dir/src/FullSystem/ImmaturePoint.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/dso.dir/src/FullSystem/HessianBlocks.cpp.o: CMakeFiles/dso.dir/flags.make
 CMakeFiles/dso.dir/src/FullSystem/HessianBlocks.cpp.o: ../src/FullSystem/HessianBlocks.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/dso.dir/src/FullSystem/HessianBlocks.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/FullSystem/HessianBlocks.cpp.o -c /data/code/mil_dso/src/FullSystem/HessianBlocks.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/dso.dir/src/FullSystem/HessianBlocks.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/FullSystem/HessianBlocks.cpp.o -c /data/code2/mil_dso/src/FullSystem/HessianBlocks.cpp
 
 CMakeFiles/dso.dir/src/FullSystem/HessianBlocks.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dso.dir/src/FullSystem/HessianBlocks.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code/mil_dso/src/FullSystem/HessianBlocks.cpp > CMakeFiles/dso.dir/src/FullSystem/HessianBlocks.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code2/mil_dso/src/FullSystem/HessianBlocks.cpp > CMakeFiles/dso.dir/src/FullSystem/HessianBlocks.cpp.i
 
 CMakeFiles/dso.dir/src/FullSystem/HessianBlocks.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dso.dir/src/FullSystem/HessianBlocks.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code/mil_dso/src/FullSystem/HessianBlocks.cpp -o CMakeFiles/dso.dir/src/FullSystem/HessianBlocks.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code2/mil_dso/src/FullSystem/HessianBlocks.cpp -o CMakeFiles/dso.dir/src/FullSystem/HessianBlocks.cpp.s
 
 CMakeFiles/dso.dir/src/FullSystem/HessianBlocks.cpp.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/dso.dir/src/FullSystem/HessianBlocks.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/dso.dir/src/FullSystem/PixelSelector2.cpp.o: CMakeFiles/dso.dir/flags.make
 CMakeFiles/dso.dir/src/FullSystem/PixelSelector2.cpp.o: ../src/FullSystem/PixelSelector2.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/dso.dir/src/FullSystem/PixelSelector2.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/FullSystem/PixelSelector2.cpp.o -c /data/code/mil_dso/src/FullSystem/PixelSelector2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/dso.dir/src/FullSystem/PixelSelector2.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/FullSystem/PixelSelector2.cpp.o -c /data/code2/mil_dso/src/FullSystem/PixelSelector2.cpp
 
 CMakeFiles/dso.dir/src/FullSystem/PixelSelector2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dso.dir/src/FullSystem/PixelSelector2.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code/mil_dso/src/FullSystem/PixelSelector2.cpp > CMakeFiles/dso.dir/src/FullSystem/PixelSelector2.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code2/mil_dso/src/FullSystem/PixelSelector2.cpp > CMakeFiles/dso.dir/src/FullSystem/PixelSelector2.cpp.i
 
 CMakeFiles/dso.dir/src/FullSystem/PixelSelector2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dso.dir/src/FullSystem/PixelSelector2.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code/mil_dso/src/FullSystem/PixelSelector2.cpp -o CMakeFiles/dso.dir/src/FullSystem/PixelSelector2.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code2/mil_dso/src/FullSystem/PixelSelector2.cpp -o CMakeFiles/dso.dir/src/FullSystem/PixelSelector2.cpp.s
 
 CMakeFiles/dso.dir/src/FullSystem/PixelSelector2.cpp.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/dso.dir/src/FullSystem/PixelSelector2.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctional.cpp.o: CMakeFiles/dso.dir/flags.make
 CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctional.cpp.o: ../src/OptimizationBackend/EnergyFunctional.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctional.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctional.cpp.o -c /data/code/mil_dso/src/OptimizationBackend/EnergyFunctional.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctional.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctional.cpp.o -c /data/code2/mil_dso/src/OptimizationBackend/EnergyFunctional.cpp
 
 CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctional.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctional.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code/mil_dso/src/OptimizationBackend/EnergyFunctional.cpp > CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctional.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code2/mil_dso/src/OptimizationBackend/EnergyFunctional.cpp > CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctional.cpp.i
 
 CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctional.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctional.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code/mil_dso/src/OptimizationBackend/EnergyFunctional.cpp -o CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctional.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code2/mil_dso/src/OptimizationBackend/EnergyFunctional.cpp -o CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctional.cpp.s
 
 CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctional.cpp.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctional.cpp.o.provides.build
 
 CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedTopHessian.cpp.o: CMakeFiles/dso.dir/flags.make
 CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedTopHessian.cpp.o: ../src/OptimizationBackend/AccumulatedTopHessian.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedTopHessian.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedTopHessian.cpp.o -c /data/code/mil_dso/src/OptimizationBackend/AccumulatedTopHessian.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedTopHessian.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedTopHessian.cpp.o -c /data/code2/mil_dso/src/OptimizationBackend/AccumulatedTopHessian.cpp
 
 CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedTopHessian.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedTopHessian.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code/mil_dso/src/OptimizationBackend/AccumulatedTopHessian.cpp > CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedTopHessian.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code2/mil_dso/src/OptimizationBackend/AccumulatedTopHessian.cpp > CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedTopHessian.cpp.i
 
 CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedTopHessian.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedTopHessian.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code/mil_dso/src/OptimizationBackend/AccumulatedTopHessian.cpp -o CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedTopHessian.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code2/mil_dso/src/OptimizationBackend/AccumulatedTopHessian.cpp -o CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedTopHessian.cpp.s
 
 CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedTopHessian.cpp.o.requires:
 
@@ -371,16 +371,16 @@ CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedTopHessian.cpp.o.provides.
 
 CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedSCHessian.cpp.o: CMakeFiles/dso.dir/flags.make
 CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedSCHessian.cpp.o: ../src/OptimizationBackend/AccumulatedSCHessian.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedSCHessian.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedSCHessian.cpp.o -c /data/code/mil_dso/src/OptimizationBackend/AccumulatedSCHessian.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedSCHessian.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedSCHessian.cpp.o -c /data/code2/mil_dso/src/OptimizationBackend/AccumulatedSCHessian.cpp
 
 CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedSCHessian.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedSCHessian.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code/mil_dso/src/OptimizationBackend/AccumulatedSCHessian.cpp > CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedSCHessian.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code2/mil_dso/src/OptimizationBackend/AccumulatedSCHessian.cpp > CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedSCHessian.cpp.i
 
 CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedSCHessian.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedSCHessian.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code/mil_dso/src/OptimizationBackend/AccumulatedSCHessian.cpp -o CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedSCHessian.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code2/mil_dso/src/OptimizationBackend/AccumulatedSCHessian.cpp -o CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedSCHessian.cpp.s
 
 CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedSCHessian.cpp.o.requires:
 
@@ -395,16 +395,16 @@ CMakeFiles/dso.dir/src/OptimizationBackend/AccumulatedSCHessian.cpp.o.provides.b
 
 CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctionalStructs.cpp.o: CMakeFiles/dso.dir/flags.make
 CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctionalStructs.cpp.o: ../src/OptimizationBackend/EnergyFunctionalStructs.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctionalStructs.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctionalStructs.cpp.o -c /data/code/mil_dso/src/OptimizationBackend/EnergyFunctionalStructs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctionalStructs.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctionalStructs.cpp.o -c /data/code2/mil_dso/src/OptimizationBackend/EnergyFunctionalStructs.cpp
 
 CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctionalStructs.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctionalStructs.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code/mil_dso/src/OptimizationBackend/EnergyFunctionalStructs.cpp > CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctionalStructs.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code2/mil_dso/src/OptimizationBackend/EnergyFunctionalStructs.cpp > CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctionalStructs.cpp.i
 
 CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctionalStructs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctionalStructs.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code/mil_dso/src/OptimizationBackend/EnergyFunctionalStructs.cpp -o CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctionalStructs.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code2/mil_dso/src/OptimizationBackend/EnergyFunctionalStructs.cpp -o CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctionalStructs.cpp.s
 
 CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctionalStructs.cpp.o.requires:
 
@@ -419,16 +419,16 @@ CMakeFiles/dso.dir/src/OptimizationBackend/EnergyFunctionalStructs.cpp.o.provide
 
 CMakeFiles/dso.dir/src/util/settings.cpp.o: CMakeFiles/dso.dir/flags.make
 CMakeFiles/dso.dir/src/util/settings.cpp.o: ../src/util/settings.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/dso.dir/src/util/settings.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/util/settings.cpp.o -c /data/code/mil_dso/src/util/settings.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/dso.dir/src/util/settings.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/util/settings.cpp.o -c /data/code2/mil_dso/src/util/settings.cpp
 
 CMakeFiles/dso.dir/src/util/settings.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dso.dir/src/util/settings.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code/mil_dso/src/util/settings.cpp > CMakeFiles/dso.dir/src/util/settings.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code2/mil_dso/src/util/settings.cpp > CMakeFiles/dso.dir/src/util/settings.cpp.i
 
 CMakeFiles/dso.dir/src/util/settings.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dso.dir/src/util/settings.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code/mil_dso/src/util/settings.cpp -o CMakeFiles/dso.dir/src/util/settings.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code2/mil_dso/src/util/settings.cpp -o CMakeFiles/dso.dir/src/util/settings.cpp.s
 
 CMakeFiles/dso.dir/src/util/settings.cpp.o.requires:
 
@@ -443,16 +443,16 @@ CMakeFiles/dso.dir/src/util/settings.cpp.o.provides.build: CMakeFiles/dso.dir/sr
 
 CMakeFiles/dso.dir/src/util/Undistort.cpp.o: CMakeFiles/dso.dir/flags.make
 CMakeFiles/dso.dir/src/util/Undistort.cpp.o: ../src/util/Undistort.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/dso.dir/src/util/Undistort.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/util/Undistort.cpp.o -c /data/code/mil_dso/src/util/Undistort.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/dso.dir/src/util/Undistort.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/util/Undistort.cpp.o -c /data/code2/mil_dso/src/util/Undistort.cpp
 
 CMakeFiles/dso.dir/src/util/Undistort.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dso.dir/src/util/Undistort.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code/mil_dso/src/util/Undistort.cpp > CMakeFiles/dso.dir/src/util/Undistort.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code2/mil_dso/src/util/Undistort.cpp > CMakeFiles/dso.dir/src/util/Undistort.cpp.i
 
 CMakeFiles/dso.dir/src/util/Undistort.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dso.dir/src/util/Undistort.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code/mil_dso/src/util/Undistort.cpp -o CMakeFiles/dso.dir/src/util/Undistort.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code2/mil_dso/src/util/Undistort.cpp -o CMakeFiles/dso.dir/src/util/Undistort.cpp.s
 
 CMakeFiles/dso.dir/src/util/Undistort.cpp.o.requires:
 
@@ -467,16 +467,16 @@ CMakeFiles/dso.dir/src/util/Undistort.cpp.o.provides.build: CMakeFiles/dso.dir/s
 
 CMakeFiles/dso.dir/src/util/globalCalib.cpp.o: CMakeFiles/dso.dir/flags.make
 CMakeFiles/dso.dir/src/util/globalCalib.cpp.o: ../src/util/globalCalib.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/dso.dir/src/util/globalCalib.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/util/globalCalib.cpp.o -c /data/code/mil_dso/src/util/globalCalib.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/dso.dir/src/util/globalCalib.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/util/globalCalib.cpp.o -c /data/code2/mil_dso/src/util/globalCalib.cpp
 
 CMakeFiles/dso.dir/src/util/globalCalib.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dso.dir/src/util/globalCalib.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code/mil_dso/src/util/globalCalib.cpp > CMakeFiles/dso.dir/src/util/globalCalib.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code2/mil_dso/src/util/globalCalib.cpp > CMakeFiles/dso.dir/src/util/globalCalib.cpp.i
 
 CMakeFiles/dso.dir/src/util/globalCalib.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dso.dir/src/util/globalCalib.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code/mil_dso/src/util/globalCalib.cpp -o CMakeFiles/dso.dir/src/util/globalCalib.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code2/mil_dso/src/util/globalCalib.cpp -o CMakeFiles/dso.dir/src/util/globalCalib.cpp.s
 
 CMakeFiles/dso.dir/src/util/globalCalib.cpp.o.requires:
 
@@ -491,16 +491,16 @@ CMakeFiles/dso.dir/src/util/globalCalib.cpp.o.provides.build: CMakeFiles/dso.dir
 
 CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp.o: CMakeFiles/dso.dir/flags.make
 CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp.o: ../src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp.o -c /data/code/mil_dso/src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp.o -c /data/code2/mil_dso/src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp
 
 CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code/mil_dso/src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp > CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code2/mil_dso/src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp > CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp.i
 
 CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code/mil_dso/src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp -o CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code2/mil_dso/src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp -o CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp.s
 
 CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp.o.requires:
 
@@ -515,16 +515,16 @@ CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageDisplay_OpenCV.cpp.o.provides.build
 
 CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageRW_OpenCV.cpp.o: CMakeFiles/dso.dir/flags.make
 CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageRW_OpenCV.cpp.o: ../src/IOWrapper/OpenCV/ImageRW_OpenCV.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageRW_OpenCV.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageRW_OpenCV.cpp.o -c /data/code/mil_dso/src/IOWrapper/OpenCV/ImageRW_OpenCV.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageRW_OpenCV.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageRW_OpenCV.cpp.o -c /data/code2/mil_dso/src/IOWrapper/OpenCV/ImageRW_OpenCV.cpp
 
 CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageRW_OpenCV.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageRW_OpenCV.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code/mil_dso/src/IOWrapper/OpenCV/ImageRW_OpenCV.cpp > CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageRW_OpenCV.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code2/mil_dso/src/IOWrapper/OpenCV/ImageRW_OpenCV.cpp > CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageRW_OpenCV.cpp.i
 
 CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageRW_OpenCV.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageRW_OpenCV.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code/mil_dso/src/IOWrapper/OpenCV/ImageRW_OpenCV.cpp -o CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageRW_OpenCV.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code2/mil_dso/src/IOWrapper/OpenCV/ImageRW_OpenCV.cpp -o CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageRW_OpenCV.cpp.s
 
 CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageRW_OpenCV.cpp.o.requires:
 
@@ -539,16 +539,16 @@ CMakeFiles/dso.dir/src/IOWrapper/OpenCV/ImageRW_OpenCV.cpp.o.provides.build: CMa
 
 CMakeFiles/dso.dir/src/IOWrapper/Pangolin/KeyFrameDisplay.cpp.o: CMakeFiles/dso.dir/flags.make
 CMakeFiles/dso.dir/src/IOWrapper/Pangolin/KeyFrameDisplay.cpp.o: ../src/IOWrapper/Pangolin/KeyFrameDisplay.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/dso.dir/src/IOWrapper/Pangolin/KeyFrameDisplay.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/IOWrapper/Pangolin/KeyFrameDisplay.cpp.o -c /data/code/mil_dso/src/IOWrapper/Pangolin/KeyFrameDisplay.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/dso.dir/src/IOWrapper/Pangolin/KeyFrameDisplay.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/IOWrapper/Pangolin/KeyFrameDisplay.cpp.o -c /data/code2/mil_dso/src/IOWrapper/Pangolin/KeyFrameDisplay.cpp
 
 CMakeFiles/dso.dir/src/IOWrapper/Pangolin/KeyFrameDisplay.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dso.dir/src/IOWrapper/Pangolin/KeyFrameDisplay.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code/mil_dso/src/IOWrapper/Pangolin/KeyFrameDisplay.cpp > CMakeFiles/dso.dir/src/IOWrapper/Pangolin/KeyFrameDisplay.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code2/mil_dso/src/IOWrapper/Pangolin/KeyFrameDisplay.cpp > CMakeFiles/dso.dir/src/IOWrapper/Pangolin/KeyFrameDisplay.cpp.i
 
 CMakeFiles/dso.dir/src/IOWrapper/Pangolin/KeyFrameDisplay.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dso.dir/src/IOWrapper/Pangolin/KeyFrameDisplay.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code/mil_dso/src/IOWrapper/Pangolin/KeyFrameDisplay.cpp -o CMakeFiles/dso.dir/src/IOWrapper/Pangolin/KeyFrameDisplay.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code2/mil_dso/src/IOWrapper/Pangolin/KeyFrameDisplay.cpp -o CMakeFiles/dso.dir/src/IOWrapper/Pangolin/KeyFrameDisplay.cpp.s
 
 CMakeFiles/dso.dir/src/IOWrapper/Pangolin/KeyFrameDisplay.cpp.o.requires:
 
@@ -563,16 +563,16 @@ CMakeFiles/dso.dir/src/IOWrapper/Pangolin/KeyFrameDisplay.cpp.o.provides.build: 
 
 CMakeFiles/dso.dir/src/IOWrapper/Pangolin/PangolinDSOViewer.cpp.o: CMakeFiles/dso.dir/flags.make
 CMakeFiles/dso.dir/src/IOWrapper/Pangolin/PangolinDSOViewer.cpp.o: ../src/IOWrapper/Pangolin/PangolinDSOViewer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/dso.dir/src/IOWrapper/Pangolin/PangolinDSOViewer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/IOWrapper/Pangolin/PangolinDSOViewer.cpp.o -c /data/code/mil_dso/src/IOWrapper/Pangolin/PangolinDSOViewer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/dso.dir/src/IOWrapper/Pangolin/PangolinDSOViewer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso.dir/src/IOWrapper/Pangolin/PangolinDSOViewer.cpp.o -c /data/code2/mil_dso/src/IOWrapper/Pangolin/PangolinDSOViewer.cpp
 
 CMakeFiles/dso.dir/src/IOWrapper/Pangolin/PangolinDSOViewer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dso.dir/src/IOWrapper/Pangolin/PangolinDSOViewer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code/mil_dso/src/IOWrapper/Pangolin/PangolinDSOViewer.cpp > CMakeFiles/dso.dir/src/IOWrapper/Pangolin/PangolinDSOViewer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code2/mil_dso/src/IOWrapper/Pangolin/PangolinDSOViewer.cpp > CMakeFiles/dso.dir/src/IOWrapper/Pangolin/PangolinDSOViewer.cpp.i
 
 CMakeFiles/dso.dir/src/IOWrapper/Pangolin/PangolinDSOViewer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dso.dir/src/IOWrapper/Pangolin/PangolinDSOViewer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code/mil_dso/src/IOWrapper/Pangolin/PangolinDSOViewer.cpp -o CMakeFiles/dso.dir/src/IOWrapper/Pangolin/PangolinDSOViewer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code2/mil_dso/src/IOWrapper/Pangolin/PangolinDSOViewer.cpp -o CMakeFiles/dso.dir/src/IOWrapper/Pangolin/PangolinDSOViewer.cpp.s
 
 CMakeFiles/dso.dir/src/IOWrapper/Pangolin/PangolinDSOViewer.cpp.o.requires:
 
@@ -637,7 +637,7 @@ lib/libdso.a: CMakeFiles/dso.dir/src/IOWrapper/Pangolin/KeyFrameDisplay.cpp.o
 lib/libdso.a: CMakeFiles/dso.dir/src/IOWrapper/Pangolin/PangolinDSOViewer.cpp.o
 lib/libdso.a: CMakeFiles/dso.dir/build.make
 lib/libdso.a: CMakeFiles/dso.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX static library lib/libdso.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX static library lib/libdso.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/dso.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dso.dir/link.txt --verbose=$(VERBOSE)
 
@@ -676,6 +676,6 @@ CMakeFiles/dso.dir/clean:
 .PHONY : CMakeFiles/dso.dir/clean
 
 CMakeFiles/dso.dir/depend:
-	cd /data/code/mil_dso/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/code/mil_dso /data/code/mil_dso /data/code/mil_dso/cmake-build-debug /data/code/mil_dso/cmake-build-debug /data/code/mil_dso/cmake-build-debug/CMakeFiles/dso.dir/DependInfo.cmake --color=$(COLOR)
+	cd /data/code2/mil_dso/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/code2/mil_dso /data/code2/mil_dso /data/code2/mil_dso/cmake-build-debug /data/code2/mil_dso/cmake-build-debug /data/code2/mil_dso/cmake-build-debug/CMakeFiles/dso.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dso.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /data/code/mil_dso
+# Install script for directory: /data/code2/mil_dso
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/data/code/mil_dso/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/data/code2/mil_dso/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

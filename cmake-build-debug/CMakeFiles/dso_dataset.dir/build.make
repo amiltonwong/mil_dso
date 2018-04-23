@@ -43,10 +43,10 @@ RM = /root/Downloads/clion-2018.1.1/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/code/mil_dso
+CMAKE_SOURCE_DIR = /data/code2/mil_dso
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/code/mil_dso/cmake-build-debug
+CMAKE_BINARY_DIR = /data/code2/mil_dso/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/dso_dataset.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/dso_dataset.dir/flags.make
 
 CMakeFiles/dso_dataset.dir/src/main_dso_pangolin.cpp.o: CMakeFiles/dso_dataset.dir/flags.make
 CMakeFiles/dso_dataset.dir/src/main_dso_pangolin.cpp.o: ../src/main_dso_pangolin.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dso_dataset.dir/src/main_dso_pangolin.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso_dataset.dir/src/main_dso_pangolin.cpp.o -c /data/code/mil_dso/src/main_dso_pangolin.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dso_dataset.dir/src/main_dso_pangolin.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dso_dataset.dir/src/main_dso_pangolin.cpp.o -c /data/code2/mil_dso/src/main_dso_pangolin.cpp
 
 CMakeFiles/dso_dataset.dir/src/main_dso_pangolin.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dso_dataset.dir/src/main_dso_pangolin.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code/mil_dso/src/main_dso_pangolin.cpp > CMakeFiles/dso_dataset.dir/src/main_dso_pangolin.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/code2/mil_dso/src/main_dso_pangolin.cpp > CMakeFiles/dso_dataset.dir/src/main_dso_pangolin.cpp.i
 
 CMakeFiles/dso_dataset.dir/src/main_dso_pangolin.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dso_dataset.dir/src/main_dso_pangolin.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code/mil_dso/src/main_dso_pangolin.cpp -o CMakeFiles/dso_dataset.dir/src/main_dso_pangolin.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/code2/mil_dso/src/main_dso_pangolin.cpp -o CMakeFiles/dso_dataset.dir/src/main_dso_pangolin.cpp.s
 
 CMakeFiles/dso_dataset.dir/src/main_dso_pangolin.cpp.o.requires:
 
@@ -91,46 +91,33 @@ dso_dataset_EXTERNAL_OBJECTS =
 bin/dso_dataset: CMakeFiles/dso_dataset.dir/src/main_dso_pangolin.cpp.o
 bin/dso_dataset: CMakeFiles/dso_dataset.dir/build.make
 bin/dso_dataset: lib/libdso.a
-bin/dso_dataset: /root/Downloads2/ElasticFusion/deps/Pangolin/build/src/libpangolin.so
-bin/dso_dataset: /usr/local/lib/libopencv_cudabgsegm.so.3.3.0
-bin/dso_dataset: /usr/local/lib/libopencv_cudaobjdetect.so.3.3.0
-bin/dso_dataset: /usr/local/lib/libopencv_cudastereo.so.3.3.0
+bin/dso_dataset: /usr/local/lib/libzip.so
+bin/dso_dataset: /usr/local/lib/libpangolin.so
 bin/dso_dataset: /usr/local/lib/libopencv_dnn.so.3.3.0
 bin/dso_dataset: /usr/local/lib/libopencv_ml.so.3.3.0
+bin/dso_dataset: /usr/local/lib/libopencv_objdetect.so.3.3.0
 bin/dso_dataset: /usr/local/lib/libopencv_shape.so.3.3.0
 bin/dso_dataset: /usr/local/lib/libopencv_stitching.so.3.3.0
 bin/dso_dataset: /usr/local/lib/libopencv_superres.so.3.3.0
 bin/dso_dataset: /usr/local/lib/libopencv_videostab.so.3.3.0
+bin/dso_dataset: /usr/local/lib/libopencv_viz.so.3.3.0
 bin/dso_dataset: /usr/lib/x86_64-linux-gnu/libGLU.so
 bin/dso_dataset: /usr/lib/x86_64-linux-gnu/libGL.so
 bin/dso_dataset: /usr/lib/x86_64-linux-gnu/libGLEW.so
-bin/dso_dataset: /usr/lib/x86_64-linux-gnu/libSM.so
-bin/dso_dataset: /usr/lib/x86_64-linux-gnu/libICE.so
 bin/dso_dataset: /usr/lib/x86_64-linux-gnu/libX11.so
 bin/dso_dataset: /usr/lib/x86_64-linux-gnu/libXext.so
-bin/dso_dataset: /usr/lib/x86_64-linux-gnu/libjpeg.so
-bin/dso_dataset: /usr/local/lib/libopencv_cudafeatures2d.so.3.3.0
-bin/dso_dataset: /usr/local/lib/libopencv_cudacodec.so.3.3.0
-bin/dso_dataset: /usr/local/lib/libopencv_cudaoptflow.so.3.3.0
-bin/dso_dataset: /usr/local/lib/libopencv_cudalegacy.so.3.3.0
 bin/dso_dataset: /usr/local/lib/libopencv_calib3d.so.3.3.0
-bin/dso_dataset: /usr/local/lib/libopencv_cudawarping.so.3.3.0
 bin/dso_dataset: /usr/local/lib/libopencv_features2d.so.3.3.0
 bin/dso_dataset: /usr/local/lib/libopencv_flann.so.3.3.0
 bin/dso_dataset: /usr/local/lib/libopencv_highgui.so.3.3.0
-bin/dso_dataset: /usr/local/lib/libopencv_objdetect.so.3.3.0
 bin/dso_dataset: /usr/local/lib/libopencv_photo.so.3.3.0
-bin/dso_dataset: /usr/local/lib/libopencv_cudaimgproc.so.3.3.0
-bin/dso_dataset: /usr/local/lib/libopencv_cudafilters.so.3.3.0
-bin/dso_dataset: /usr/local/lib/libopencv_cudaarithm.so.3.3.0
 bin/dso_dataset: /usr/local/lib/libopencv_video.so.3.3.0
 bin/dso_dataset: /usr/local/lib/libopencv_videoio.so.3.3.0
 bin/dso_dataset: /usr/local/lib/libopencv_imgcodecs.so.3.3.0
 bin/dso_dataset: /usr/local/lib/libopencv_imgproc.so.3.3.0
 bin/dso_dataset: /usr/local/lib/libopencv_core.so.3.3.0
-bin/dso_dataset: /usr/local/lib/libopencv_cudev.so.3.3.0
 bin/dso_dataset: CMakeFiles/dso_dataset.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data/code/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/dso_dataset"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data/code2/mil_dso/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin/dso_dataset"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dso_dataset.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -147,6 +134,6 @@ CMakeFiles/dso_dataset.dir/clean:
 .PHONY : CMakeFiles/dso_dataset.dir/clean
 
 CMakeFiles/dso_dataset.dir/depend:
-	cd /data/code/mil_dso/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/code/mil_dso /data/code/mil_dso /data/code/mil_dso/cmake-build-debug /data/code/mil_dso/cmake-build-debug /data/code/mil_dso/cmake-build-debug/CMakeFiles/dso_dataset.dir/DependInfo.cmake --color=$(COLOR)
+	cd /data/code2/mil_dso/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/code2/mil_dso /data/code2/mil_dso /data/code2/mil_dso/cmake-build-debug /data/code2/mil_dso/cmake-build-debug /data/code2/mil_dso/cmake-build-debug/CMakeFiles/dso_dataset.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dso_dataset.dir/depend
 

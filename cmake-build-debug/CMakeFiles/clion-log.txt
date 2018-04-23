@@ -1,4 +1,4 @@
-/root/Downloads/clion-2018.1.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /data/code/mil_dso
+/root/Downloads/clion-2018.1.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /data/code2/mil_dso
 -- The C compiler identification is GNU 5.4.0
 -- The CXX compiler identification is GNU 5.4.0
 -- Check for working C compiler: /usr/bin/cc
@@ -31,12 +31,11 @@
 --   date_time
 --   atomic
 -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
--- Could NOT find LIBZIP (missing: LIBZIP_LIBRARY LIBZIP_INCLUDE_DIR_ZIP) 
--- Found CUDA: /usr/local/cuda-8.0 (found suitable exact version "8.0") 
+-- Found LIBZIP: /usr/local/lib/libzip.so  
 --- found PANGOLIN, compiling dso_pangolin library.
 --- found OpenCV, compiling dso_opencv library.
---- not found ziplib (LIBZIP_LIBRARY-NOTFOUND), compiling without zip capability.
+--- found ziplib (1.1.1), compiling with zip capability.
 --- compiling dso_dataset.
 -- Configuring done
 -- Generating done
--- Build files have been written to: /data/code/mil_dso/cmake-build-debug
+-- Build files have been written to: /data/code2/mil_dso/cmake-build-debug
