@@ -124,10 +124,10 @@ void FrameHessian::release()
 	immaturePoints.clear();
 }
 
-
+// make image pyramid, gradient, etc.
 void FrameHessian::makeImages(float* color, CalibHessian* HCalib)
 {
-
+	// default PYR_LEVELS 6
 	for(int i=0;i<pyrLevelsUsed;i++)
 	{
 		dIp[i] = new Eigen::Vector3f[wG[i]*hG[i]];

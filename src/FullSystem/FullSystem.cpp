@@ -287,17 +287,23 @@ Vec4 FullSystem::trackNewCoarse(FrameHessian* fh)
 	if(allFrameHistory.size() == 2)
 		for(unsigned int i=0;i<lastF_2_fh_tries.size();i++) lastF_2_fh_tries.push_back(SE3());
 	else
-	{
+	{   // last 2 frame shell
 		FrameShell* slast = allFrameHistory[allFrameHistory.size()-2];
+		// last 3 frame shell
 		FrameShell* sprelast = allFrameHistory[allFrameHistory.size()-3];
+		// transformation between second last and third last
 		SE3 slast_2_sprelast;
+        // transformation between last and second last
 		SE3 lastF_2_slast;
 		{	// lock on global pose consistency!
 			boost::unique_lock<boost::mutex> crlock(shellPoseMutex);
+			// R1312 = R13_CW * R12_WC
 			slast_2_sprelast = sprelast->camToWorld.inverse() * slast->camToWorld;
+			// R1311 = R12_CW * R11_WC
 			lastF_2_slast = slast->camToWorld.inverse() * lastF->shell->camToWorld;
 			aff_last_2_l = slast->aff_g2l;
 		}
+		// Assumes R1312 == R1213
 		SE3 fh_2_slast = slast_2_sprelast;// assumed to be the same as fh_2_slast.
 
 
@@ -312,6 +318,8 @@ Vec4 FullSystem::trackNewCoarse(FrameHessian* fh)
 		// just try a TON of different initializations (all rotations). In the end,
 		// if they don't work they will only be tried on the coarsest level, which is super fast anyway.
 		// also, if tracking rails here we loose, so we really, really want to avoid that.
+        // Nan: Relocalization if the tracking fails, assuming that it's constant motion between the current and next frame using
+        // constant model.
 		for(float rotDelta=0.02; rotDelta < 0.05; rotDelta++)
 		{
 			lastF_2_fh_tries.push_back(fh_2_slast.inverse() * lastF_2_slast * SE3(Sophus::Quaterniond(1,rotDelta,0,0), Vec3(0,0,0)));			// assume constant motion.
@@ -341,17 +349,21 @@ Vec4 FullSystem::trackNewCoarse(FrameHessian* fh)
 			lastF_2_fh_tries.push_back(fh_2_slast.inverse() * lastF_2_slast * SE3(Sophus::Quaterniond(1,rotDelta,rotDelta,-rotDelta), Vec3(0,0,0)));	// assume constant motion.
 			lastF_2_fh_tries.push_back(fh_2_slast.inverse() * lastF_2_slast * SE3(Sophus::Quaterniond(1,rotDelta,rotDelta,rotDelta), Vec3(0,0,0)));	// assume constant motion.
 		}
-
+        //if 倒數第二幀 or 倒數第三幀 or last keyframe 無效
 		if(!slast->poseValid || !sprelast->poseValid || !lastF->shell->poseValid)
 		{
+		    // erase  lastF_2_fh_tries
 			lastF_2_fh_tries.clear();
+			// put a blank SE3 into it
 			lastF_2_fh_tries.push_back(SE3());
 		}
 	}
 
-
+    // optical flow vector
 	Vec3 flowVecs = Vec3(100,100,100);
+	// final lastF_2_fn init
 	SE3 lastF_2_fh = SE3();
+	// final affine brightness init
 	AffLight aff_g2l = AffLight(0,0);
 
 
@@ -363,16 +375,20 @@ Vec4 FullSystem::trackNewCoarse(FrameHessian* fh)
 	Vec5 achievedRes = Vec5::Constant(NAN);
 	bool haveOneGood = false;
 	int tryIterations=0;
+	// iterate every try
 	for(unsigned int i=0;i<lastF_2_fh_tries.size();i++)
 	{
 		AffLight aff_g2l_this = aff_last_2_l;
 		SE3 lastF_2_fh_this = lastF_2_fh_tries[i];
+		// Nan, After the init things, this is the main part
+        // params: current_frame, transformations , pyramid levels
 		bool trackingIsGood = coarseTracker->trackNewestCoarse(
 				fh, lastF_2_fh_this, aff_g2l_this,
 				pyrLevelsUsed-1,
 				achievedRes);	// in each level has to be at least as good as the last try.
 		tryIterations++;
 
+		// OUTPUT info
 		if(i != 0)
 		{
 			printf("RE-TRACK ATTEMPT %d with initOption %d and start-lvl %d (ab %f %f): %f %f %f %f %f -> %f %f %f %f %f \n",
@@ -461,7 +477,7 @@ Vec4 FullSystem::trackNewCoarse(FrameHessian* fh)
 }
 
 void FullSystem::traceNewCoarse(FrameHessian* fh)
-{
+{   // to increase the speed of coarse_tracking, use "sse"
 	boost::unique_lock<boost::mutex> lock(mapMutex);
 
 	int trace_total=0, trace_good=0, trace_oob=0, trace_out=0, trace_skip=0, trace_badcondition=0, trace_uninitialized=0;
@@ -819,18 +835,21 @@ void FullSystem::addActiveFrame( ImageAndExposure* image, int id )
     shell->marginalizedAt = shell->id = allFrameHistory.size();
     shell->timestamp = image->timestamp;
     shell->incoming_id = id;
-    // add shell to FrameHessian
+    // After the shell is initialized, add shell to FrameHessian
 	fh->shell = shell;
+	// add shell to allFrameHistory
 	allFrameHistory.push_back(shell);
 
 
 	// =========================== make Images / derivatives etc. =========================
+    // set exposure time for the frame
 	fh->ab_exposure = image->exposure_time;
+	// make image pyramid, gradient, etc.
     fh->makeImages(image->image, &Hcalib);
 
 
 
-
+    // First frame comes
 	if(!initialized)
 	{
 		// use initializer!
@@ -844,6 +863,7 @@ void FullSystem::addActiveFrame( ImageAndExposure* image, int id )
 
 			initializeFromInitializer(fh);
 			lock.unlock();
+			// First successfully tracked frame is a keyframe
 			deliverTrackedFrame(fh, true);
 		}
 		else
@@ -863,7 +883,7 @@ void FullSystem::addActiveFrame( ImageAndExposure* image, int id )
 			CoarseTracker* tmp = coarseTracker; coarseTracker=coarseTracker_forNewKF; coarseTracker_forNewKF=tmp;
 		}
 
-
+        // start a new coarse tracker
 		Vec4 tres = trackNewCoarse(fh);
 		if(!std::isfinite((double)tres[0]) || !std::isfinite((double)tres[1]) || !std::isfinite((double)tres[2]) || !std::isfinite((double)tres[3]))
         {
@@ -884,6 +904,7 @@ void FullSystem::addActiveFrame( ImageAndExposure* image, int id )
 					coarseTracker->lastRef_aff_g2l, fh->shell->aff_g2l);
 
 			// BRIGHTNESS CHECK
+            // main decision of whether to make a new KF
 			needToMakeKF = allFrameHistory.size()== 1 ||
 					setting_kfGlobalWeight*setting_maxShiftWeightT *  sqrtf((double)tres[1]) / (wG[0]+hG[0]) +
 					setting_kfGlobalWeight*setting_maxShiftWeightR *  sqrtf((double)tres[2]) / (wG[0]+hG[0]) +
@@ -903,6 +924,7 @@ void FullSystem::addActiveFrame( ImageAndExposure* image, int id )
 
 
 		lock.unlock();
+		// next step, now the frame is already tracked.
 		deliverTrackedFrame(fh, needToMakeKF);
 		return;
 	}
